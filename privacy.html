@@ -20,12 +20,12 @@
 
   <main class="wrap doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: July 25, 2026</p>
+    <p class="meta">Last updated: November 20, 2026</p>
 
     <p>This Privacy Policy explains how <strong>Boog</strong> ("Boog," "we," "us," or "our") handles information in connection with the Boog mobile application for iOS (the "App"). We've tried to write it in plain language. If anything is unclear, email us at <a href="mailto:gfang1212@gmail.com">gfang1212@gmail.com</a>.</p>
 
     <div class="callout">
-      <p><strong>The short version:</strong> Your dance videos and audio recordings stay on your device. We never upload them. We collect limited, mostly anonymous diagnostic and usage data to keep the App stable and improve it, and we only receive your contact details if you choose to send us feedback.</p>
+      <p><strong>The short version:</strong> Your dance videos and audio recordings stay on your device. We never upload them. You sign in with Apple or Google, and we keep a backup of your goals, notes, tags and settings so they come back on a new phone. Deleting your account in the App deletes that backup. We also collect limited diagnostic and usage data to keep the App stable and improve it.</p>
     </div>
 
     <h2>1. Your videos and recordings</h2>
@@ -38,14 +38,29 @@
     <p>We use Google Firebase (Crashlytics for crash reporting, and Firebase Analytics for basic install and session statistics) and PostHog for anonymous product analytics. Usage events describe actions in the app (for example "a recording was completed") and never include your name, your notes, or the content of your videos. To understand where the app is confusing, we also collect replays of app screens; recording is paused while the camera or the video player is open. Analytics is only active in App Store builds. We do not use advertising identifiers and do not track you across other apps or websites.</p>
     <p>This information is processed by Google as our service provider. To learn how Google handles data collected through Firebase, see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
-    <h3>b) Feedback you send us</h3>
-    <p>If you contact us through <strong>Settings → Send Feedback</strong> in the App, we collect the message you write and the name and email address you provide so we can read and respond. This feedback is delivered to us using <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">Formspree</a>, which processes the submission on our behalf. If you email us directly, we receive whatever you include in that email.</p>
+    <h3>b) Your account</h3>
+    <p>The App requires an account. You sign in with <strong>Apple</strong> or <strong>Google</strong>; we never see your password. From your sign-in we receive and store your <strong>email address</strong>, a <strong>display name</strong> (the name your Apple or Google sign-in shares, which Sign in with Apple lets you edit, or otherwise the name you entered in the App; it does not need to be your legal name), which provider you used, and an account <strong>user ID</strong>. If you use Sign in with Apple's "Hide My Email", we receive only the relay address Apple gives us. We use your email address only to run your account and support you, never for advertising or promotional email.</p>
+
+    <h3>c) Your backup</h3>
+    <p>While you are signed in, the App backs up your library's information to our servers, linked to your account, so it survives a lost or replaced phone and returns the next time you sign in. The backup contains:</p>
+    <ul>
+      <li>your goals, practice notes and session names;</li>
+      <li>your tags (their text, times and colours) and your take titles;</li>
+      <li>technical details of each take, such as its length, resolution, frame rate and the angle it was filmed at;</li>
+      <li>the dancer name and dance styles you entered, your app settings, and your onboarding and tips progress;</li>
+      <li>your device model, iOS version and app version, and a random identifier for this installation of the App.</li>
+    </ul>
+    <p>The backup <strong>never</strong> contains your videos or audio, your location, or the original file names of imported videos. It holds whatever is on the phone while you are signed in.</p>
+
+    <h3>d) Support chat</h3>
+    <p>If you chat with us in the App (Profile or the Studio tab), we store the messages you write, your name, your app and iOS versions, and a notification token so we can tell you when we reply. Messages reach us through Slack, which processes them on our behalf. If you email us directly, we receive whatever you include in that email.</p>
 
     <h2>3. How we use information</h2>
     <ul>
       <li>To operate, maintain, and improve the App;</li>
       <li>To diagnose crashes and technical issues and improve reliability and performance;</li>
       <li>To understand which features are useful so we can make the App better;</li>
+      <li>To run your account and keep your backup;</li>
       <li>To respond to your feedback, questions, and support requests.</li>
     </ul>
 
@@ -62,20 +77,25 @@
       <li><strong>Camera</strong> — to record your dance videos.</li>
       <li><strong>Microphone</strong> — to record audio together with your videos.</li>
       <li><strong>Photos (add)</strong> — to export and save your videos to your Photo library.</li>
+      <li><strong>Notifications</strong> — for practice reminders and support chat replies. You can turn practice reminders off in Profile.</li>
+      <li><strong>Motion</strong> — the Angle Guide reads your phone's tilt on the device to help you match a past camera angle. Tilt readings are not sent anywhere; only the angle saved with each take is part of your backup.</li>
     </ul>
     <p>You can review or change these at any time in the iOS Settings app under Boog. Denying a permission may limit related features.</p>
 
     <h2>6. Data sharing</h2>
-    <p>We share information only with the service providers described above (Google Firebase and Formspree), who process it on our behalf to provide their services. We may also disclose information if required by law, to protect our rights, or in connection with a business transfer. We do not otherwise sell or rent your personal information.</p>
+    <p>We share information only with the service providers described above (Google Firebase, which hosts your account, backup and support chat; Apple and Google for sign-in; and Slack for support messages), who process it on our behalf to provide their services. We may also disclose information if required by law, to protect our rights, or in connection with a business transfer. We do not otherwise sell or rent your personal information.</p>
 
     <h2>7. Data retention</h2>
-    <p>Your recordings remain on your device until you delete them. Diagnostic and usage data is retained by our service providers in accordance with their policies and standard retention periods. Feedback messages are retained for as long as needed to address your request and keep reasonable records.</p>
+    <p>Your recordings remain on your device until you delete them. Diagnostic and usage data is retained by our service providers in accordance with their policies and standard retention periods. Your account and backup are kept until you delete your account. Support chat messages are retained for as long as needed to address your request and keep reasonable records.</p>
+
+    <h2>7a. Deleting your account</h2>
+    <p>You can delete your account at any time in the App: <strong>Profile → Delete account</strong>. This deletes your account, your backup and your support chat from our servers, and revokes the App's access to your Apple sign-in. It does not delete anything on your phone: your videos and library stay on the device, and if you sign in again they are backed up again.</p>
 
     <h2>8. Children's privacy</h2>
     <p>Boog is not directed to children under 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from them. If you believe a child has provided us personal information, contact us and we will delete it.</p>
 
     <h2>9. Your rights</h2>
-    <p>Depending on where you live, you may have rights to access, correct, or delete personal information we hold about you, or to object to or restrict certain processing. To make a request, email us at <a href="mailto:gfang1212@gmail.com">gfang1212@gmail.com</a>. You can delete locally stored recordings at any time from within the App, and you can remove the App to stop further diagnostic data collection.</p>
+    <p>Depending on where you live, you may have rights to access, correct, or delete personal information we hold about you, or to object to or restrict certain processing. To make a request, email us at <a href="mailto:gfang1212@gmail.com">gfang1212@gmail.com</a>. You can delete your account and backup yourself in the App (Profile → Delete account), delete locally stored recordings at any time, and remove the App to stop further diagnostic data collection.</p>
 
     <h2>10. International users</h2>
     <p>Our service providers may process data in countries other than your own, including the United States. Where required, we rely on appropriate safeguards for such transfers.</p>
